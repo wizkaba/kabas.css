@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+  <style>
+    body{
+      background-color: black;
+      color: whitesmoke;
+    }
+    
+    .main-container {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      height: 100vh;
+      gap:5rem;
+      align-items: center;
+      
+    }
+
+    .pricing-plan {
+      flex: 1;
+      background-color: gray ;
+      padding:20px;
+      max-width: 200px;
+      border-radius: 10px;
+      text-align:center;
+      
+    }
+
+    .main-levels {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .price-tags {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .items-included li {
+       padding: 0px;
+       text-align: start;
+       list-style: none;
+       margin: 0;
+    }
+    .ad-te {
+      color: yellow;
+      font-weight: bolder;
+    }
+    .button-tap {
+      background-color: red;
+      color:aliceblue;
+      font-size: large;
+      font-weight: bold;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    @media (max-width:1000px) {
+      .main-container {
+        flex-direction: column;
+        height: 100%;
+      }
+
+    }
+    
+
+  </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="pricing-plan">
+        <div class="main-levels">beginners</div>
+        <div class="price-tags">350.000 GNF</div>
+        <ul class="items-included">
+          <li>tutorial</li>
+          <li>free internet</li>
+          <li>3 text-books</li>
+        </ul>
+        <button class="button-tap">sign up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="main-levels">intermediate</div>
+        <div class="price-tags">450.000 GNF</div>
+        <ul class="items-included">
+          <li>tutorials</li>
+          <li>free-internet</li>
+          <li>3 text-books</li>
+        </ul>
+        <button class="button-tap">sign up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="main-levels">advanced</div>
+        <div class="price-tags">600.000 GNF</div>
+        <ul class="items-included">
+          <li>free-internet</li>
+          <li><span class="ad-te">text-books</span></li>
+          <li>main-support</li>
+        </ul>
+        <button class="button-tap">sign-up</button>
+      </div>
+    </div>
+  </body>
